@@ -197,7 +197,7 @@ Every slide needs real content written for its specific purpose — no placehold
       method: 'POST',
       headers: { 'Authorization': `Bearer ${openaiKey}`, 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        model: 'gpt-5-mini',
+        model: 'gpt-5.4-mini',
         messages: [{ role: 'system', content: systemPrompt }, { role: 'user', content: userPrompt }],
         response_format: {
           type: 'json_schema',
@@ -320,7 +320,7 @@ headline and the commands, not the colour scheme.`
         method: 'POST',
         headers: { 'Authorization': `Bearer ${openaiKey}`, 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          model: 'gpt-5-mini',
+          model: 'gpt-5.4-mini',
           messages: [{ role: 'system', content: system }, { role: 'user', content: prompt }],
           response_format: { type: 'json_schema', json_schema: { name: 'captions', strict: true, schema } },
         }),
